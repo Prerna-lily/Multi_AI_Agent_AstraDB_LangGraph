@@ -4,7 +4,7 @@ Overview
 
 This project demonstrates how to use LangGraph with AstraDB for document retrieval and AI agent applications. It involves building a vector database using AstraDB, embedding documents with HuggingFace, implementing a retrieval system, and routing user queries between a vector store and Wikipedia using a structured LLM router.
 
-Features
+**Features**
 
 Document Indexing & Retrieval: Uses AstraDB as a vector store to index and retrieve documents.
 
@@ -18,15 +18,15 @@ Wikipedia API Integration: Fetches Wikipedia content for non-indexed queries.
 
 LangGraph Workflow: Defines a state graph to determine the best retrieval source.
 
-Dependencies
+**Dependencies**
 
 Install the required dependencies using:
 
 pip install langchain langgraph cassio langchain_community tiktoken langchain-groq langchainhub chromadb langchain_huggingface wikipedia
 
-Setup
+**Setup**
 
-Connect to AstraDB:
+**Connect to AstraDB:**
 
 Set up AstraDB credentials:
 
@@ -69,7 +69,7 @@ inputs = { "question": "What are LLMs?" }
 for output in app.stream(inputs):
     print(output)
 
-Outputs
+**Outputs**
 
 The system retrieves relevant documents from AstraDB or Wikipedia.
 
